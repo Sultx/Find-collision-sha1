@@ -27,7 +27,7 @@ public class Main {
 
         CheckStringFound.start();
 
-        ExecutorService executor = Executors.newSingleThreadExecutor();
+        ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor();
 
         beginTimeInMillis = System.currentTimeMillis();
 
